@@ -18,6 +18,9 @@
              
   <remote  name="johnnyslt"	  	
            fetch="git://github.com/johnnyslt/" />
+   
+   <remote  name="liquid"	  	
+           fetch="git://github.com/LiquidSoup/" />
            
   <remote  name="ls"
            fetch="git://github.com/LiquidSmooth/" />
@@ -41,7 +44,8 @@
   <project path="dalvik" name="android_dalvik" remote="cmdev" revision="cm-10.1-linaro" />
   <project path="development" name="android_development" remote="cmdev" revision="cm-10.1-linaro" />
   <project path="device/common" name="android_device_common" remote="cm" revision="cm-10.1" />
-  <project path="device/htc/shooteru" name="android_device_htc_shooteru" remote="johnnyslt" revision="cm-10.1" />
+  <project path="device/htc/shooteru" name="android_device_htc_shooteru" remote="liquid" revision="cm-10.1" />
+  <project path="device/htc/msm8660-common" name="android_device_htc_msm8660-common" remote="johnnyslt" revision="cm-10.1" />
   <project path="external/aac" name="platform/external/aac" />
   <project path="external/android-clat" name="platform/external/android-clat" />
   <project path="external/android-mock" name="android_external_android-mock" remote="cm" revision="cm-10.1" />
