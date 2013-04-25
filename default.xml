@@ -259,7 +259,7 @@
   <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="cm" revision="cm-10.1" />
   
   <project path="kernel/htc/msm8660" name="android_kernel_htc_msm8660" remote="johnnyslt" revision="cm-10.1" />
-  <project path="prebuilt/linux-x86/toolchain/linaro-4.7.3_cortex-a8" name="linaro-4.7.3_cortex-a8" remote="johnnyslt" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/linaro-4.7.3_cortex-a8" name="linaro-4.7.3_cortex-a8" remote="johnnyslt" revision="master" />
   <project path="libcore" name="android_libcore" remote="cmdev" revision="cm-10.1-linaro" />
   <project path="libnativehelper" name="platform/libnativehelper" />
   <project path="ndk" name="platform/ndk" />
