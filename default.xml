@@ -7,29 +7,26 @@
   <remote  name="cm"
            fetch="git://github.com/CyanogenMod/" />
 
-  <remote  name="ts"
-           fetch="git://github.com/loosethisskin/" />
-	  	
-  <remote  name="kh"	  	
+   <remote  name="kh"	  	
            fetch="git://github.com/koush/" />
   
   <remote  name="johnnyslt"	  	
            fetch="git://github.com/johnnyslt/" />
            
-  <remote  name="ln"
-           fetch="git://android.git.linaro.org/" />
-           
-  <remote  name="mv"
-           fetch="git://github.com/Mustaavalkosta/" />
-           
-  <remote  name="liquid"	  	
+   <remote  name="liquid"	  	
            fetch="git://github.com/LiquidSoup/" />
            
   <remote  name="ls"
            fetch="git://github.com/LiquidSmooth/" />
 
+ <remote  name="rz"
+           fetch="git://github.com/razrqcom-dev-team/" />
+
   <remote  name="tm"
            fetch="git://github.com/TheMuppets/" />
+
+  <remote  name="ts"
+           fetch="git://github.com/loosethisskin/" />
 
   <default revision="refs/tags/android-4.2.2_r1.2"
            remote="aosp"
@@ -43,8 +40,8 @@
   <project path="abi/cpp" name="platform/abi/cpp" />
   <project path="bionic" name="android_bionic" remote="ls" revision="jb2" />
   <project path="bootable/diskinstaller" name="android_bootable_diskinstaller" remote="cm" revision="cm-10.1" />
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="cm" revision="cm-10.1" />
-  <project path="dalvik" name="android_dalvik" remote="ts" revision="cm-10.1-linaro" />
+  <project path="bootable/recovery" name="platform/bootable/recovery" />
+  <project path="dalvik" name="android_dalvik" remote="ls" revision="jb2" />
   <project path="development" name="android_development" remote="ts" revision="cm-10.1-linaro" />
   <project path="device/common" name="android_device_common" remote="cm" revision="cm-10.1" />
   <project path="device/htc/shooteru" name="android_device_htc_shooteru" remote="liquid" revision="cm-10.1" />
@@ -148,7 +145,6 @@
   <project path="external/linux-tools-perf" name="android_external_linux-tools-perf" remote="ts" revision="cm-10.1-linaro" />
   <project path="external/littlemock" name="platform/external/littlemock" />
   <project path="external/llvm" name="android_external_llvm" remote="ts" revision="cm-10.1-linaro" />
-  <project path="external/lzo" name="android_external_lzo" remote="cm" revision="cm-10.1" />
   <project path="external/markdown" name="platform/external/markdown" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" />
   <project path="external/mesa3d" name="android_external_mesa3d" remote="ts" revision="cm-10.1-linaro" />
@@ -197,13 +193,13 @@
   <project path="external/tinyxml" name="platform/external/tinyxml" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" />
   <project path="external/tremolo" name="platform/external/tremolo" />
-  <project path="external/v8" name="android_external_v8" remote="ls" revision="jb2" />
+  <project path="external/v8" name="android_external_v8" remote="ts" revision="cm-10.1-linaro" />
   <project path="external/valgrind" name="platform/external/valgrind" />
-  <project path="external/webkit" name="android_external_webkit" remote="ls" revision="jb2" />
+  <project path="external/webkit" name="android_external_webkit" remote="ts" revision="cm-10.1-linaro" />
   <project path="external/webp" name="platform/external/webp" />
   <project path="external/webrtc" name="platform/external/webrtc" />
   <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" />
-  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="mv" revision="jb-mv" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="ts" revision="cm-10.1-linaro" />
   <project path="external/wpa_supplicant_8_ti" name="android_external_wpa_supplicant_8_ti" remote="ts" revision="cm-10.1-linaro" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" />
@@ -230,7 +226,7 @@
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="ls" revision="jb2" />
   <project path="frameworks/opt/vcard" name="android_frameworks_opt_vcard" remote="cm" revision="cm-10.1" />
-  <project path="frameworks/rs" name="android_frameworks_rs" remote="mv" revision="jb-mv" />
+  <project path="frameworks/rs" name="android_frameworks_rs" remote="ts" revision="cm-10.1-linaro" />
   <project path="frameworks/support" name="android_frameworks_support" remote="ts" revision="cm-10.1-linaro" />
   <project path="frameworks/testing" name="platform/frameworks/testing" />
   <project path="frameworks/wilhelm" name="android_frameworks_wilhelm" remote="ts" revision="cm-10.1-linaro" />
@@ -239,7 +235,7 @@
   <project path="hardware/invensense" name="android_hardware_invensense" remote="cm" revision="cm-10.1" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="johnnyslt" revision="cm-10.1" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="cm" revision="cm-10.1" />
-  <project path="hardware/msm7k" name="android_hardware_msm7k" remote="mv" revision="jb-mv" />
+  <project path="hardware/msm7k" name="android_hardware_msm7k" remote="cm" revision="cm-10.1" />
   <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="cm" revision="cm-10.1" />
   <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="cm" revision="cm-10.1" />
   <project path="hardware/qcom/audio-legacy" name="android_hardware_qcom_audio-legacy" remote="johnnyslt" revision="cm-10.1" />
@@ -256,7 +252,7 @@
   <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="cm" revision="cm-10.1" />
   <project path="hardware/qcom/sensors" name="android_hardware_qcom_sensors" remote="cm" revision="cm-10.1" />
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="cm" revision="cm-10.1" />
-  <project path="hardware/ril" name="android_hardware_ril" remote="mv" revision="jb-mv" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="cm" revision="cm-10.1" />
   <project path="hardware/samsung_slsi/exynos5" name="android_hardware_samsung_slsi_exynos5" remote="cm" revision="cm-10.1" />
   <project path="hardware/ti/wlan" name="android_hardware_ti_wlan" remote="cm" revision="cm-10.1" />
   <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="cm" revision="cm-10.1" />
@@ -271,7 +267,7 @@
   <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="cm" revision="cm-10.1" />
   <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="cm" revision="cm-10.1" />
   <project path="packages/apps/Calculator" name="android_packages_apps_Calculator" remote="cm" revision="cm-10.1" />
-  <project path="packages/apps/Camera" name="android_packages_apps_Camera" remote="cm" revision="cm-10.1" />
+  <project path="packages/apps/Camera" name="android_packages_apps_Camera" remote="ls" revision="jb2" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" />
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="ls" revision="jb2" />
@@ -296,7 +292,7 @@
   <project path="packages/experimental" name="platform/packages/experimental" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="ls" revision="jb2" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
-  <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" />
+  <project path="packages/providers/CalendarProvider" name="android_packages_providers_CalendarProvider" remote="cm" revision="cm-10.1" />
   <project path="packages/providers/ContactsProvider" name="android_packages_providers_ContactsProvider" remote="ls" revision="jb2" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="ls" revision="jb2" />
   <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider" />
@@ -326,6 +322,7 @@
   <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" groups="darwin,x86" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" groups="linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" groups="linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="linux,arm" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" groups="linux,arm" revision="master" />
   <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" groups="linux" />
   <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" groups="linux" />
