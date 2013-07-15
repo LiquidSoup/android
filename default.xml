@@ -1,34 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
+ <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
 
-  <remote  name="cm"
+ <remote  name="cm"
            fetch="git://github.com/CyanogenMod/" />
 
-   <remote  name="kh"	  	
+ <remote  name="kh"	  	
            fetch="git://github.com/koush/" />
   
-  <remote  name="johnnyslt"	  	
+ <remote  name="johnnyslt"	  	
            fetch="git://github.com/johnnyslt/" />
            
-   <remote  name="liquid"	  	
+ <remote  name="liquid"	  	
            fetch="git://github.com/LiquidSoup/" />
            
-  <remote  name="ls"
+ <remote  name="ls"
            fetch="git://github.com/LiquidSmooth/" />
 
  <remote  name="rz"
            fetch="git://github.com/razrqcom-dev-team/" />
+           
+ <remote  name="sm"
+           fetch="git://github.com/SaberMod/" />
 
-  <remote  name="tm"
+ <remote  name="tm"
            fetch="git://github.com/TheMuppets/" />
 
-  <remote  name="ts"
+ <remote  name="ts"
            fetch="git://github.com/loosethisskin/" />
 
-  <default revision="refs/tags/android-4.2.2_r1.2"
+ <default revision="refs/tags/android-4.2.2_r1.2"
            remote="aosp"
            sync-c="true"
            sync-j="8" />
@@ -40,7 +43,7 @@
   <project path="abi/cpp" name="platform/abi/cpp" />
   <project path="bionic" name="android_bionic" remote="ls" revision="jb2" />
   <project path="bootable/diskinstaller" name="android_bootable_diskinstaller" remote="cm" revision="cm-10.1" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="cm" revision="cm-10.1" />
   <project path="dalvik" name="android_dalvik" remote="ls" revision="jb2" />
   <project path="development" name="android_development" remote="ts" revision="cm-10.1-linaro" />
   <project path="device/common" name="android_device_common" remote="cm" revision="cm-10.1" />
@@ -259,7 +262,7 @@
   
   <project path="kernel/htc/msm8660" name="android_kernel_htc_msm8660" remote="johnnyslt" revision="cm-10.1" />
   <project path="prebuilts/gcc/linux-x86/arm/linaro-4.7.3_cortex-a8" name="linaro-4.7.3_cortex-a8" remote="johnnyslt" revision="master" />
-  <project path="libcore" name="android_libcore" remote="ls" revision="jb2" />
+  <project path="libcore" name="android_libcore" remote="ts" revision="cm-10.1-linaro" />
   <project path="libnativehelper" name="platform/libnativehelper" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/Apollo" name="android_packages_apps_Apollo" remote="cm" revision="cm-10.1" />
@@ -268,7 +271,7 @@
   <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="cm" revision="cm-10.1" />
   <project path="packages/apps/Calculator" name="android_packages_apps_Calculator" remote="cm" revision="cm-10.1" />
   <project path="packages/apps/Camera" name="android_packages_apps_Camera" remote="ls" revision="jb2" />
-  <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" />
+  <project path="packages/apps/CellBroadcastReceiver" name="android_packages_apps_CellBroadcastReceiver" remote="cm" revision="cm-10.1" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" />
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="ls" revision="jb2" />
   <project path="packages/apps/DashClock" name="android_packages_apps_DashClock" remote="ls" revision="jb2" />
@@ -284,6 +287,7 @@
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
   <project path="packages/apps/PerformanceControl" name="android_packages_apps_PerformanceControl" remote="ls" revision="jb2" />
   <project path="packages/apps/Phone" name="android_packages_apps_Phone" remote="liquid" revision="jb2" />
+  <project path="packages/apps/Provision" name="android_packages_apps_Provision" remote="cm" revision="cm-10.1" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ls" revision="jb2" />
   <project path="packages/apps/SoundRecorder" name="android_packages_apps_SoundRecorder" remote="cm" revision="cm-10.1" />
   <project path="packages/apps/Stk" name="android_packages_apps_Stk" remote="cm" revision="cm-10.1" />
@@ -322,7 +326,7 @@
   <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" name="platform/prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" groups="darwin,x86" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" groups="linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" groups="linux,arm" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" groups="linux,arm" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.7" remote="sm" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" groups="linux,arm" revision="master" />
   <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" groups="linux" />
   <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" groups="linux" />
