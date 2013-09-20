@@ -282,7 +282,7 @@
   <project path="libnativehelper" name="platform/libnativehelper" />
   
   <project path="kernel/htc/msm8660" name="android_kernel_htc_msm8660" remote="johnnyslt" revision="cm-10.2" />
-  <project path="kernel/htc/shooteru" name="android_kernel_shooteru" remote="johnnyslt" revision="jellybean" />
+  <project path="kernel/htc/shooteru" name="android_kernel_shooter" remote="johnnyslt" revision="jellybean" />
   <project path="prebuilt/linux-x86/toolchain/linaro-4.7.3_cortex-a8" name="linaro-4.7.3_cortex-a8" remote="johnnyslt" revision="master" />
 
   <project path="ndk" name="platform/ndk" />
