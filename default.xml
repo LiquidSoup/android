@@ -16,6 +16,9 @@
   <remote  name="ls"
            fetch="https://github.com/LiquidSmooth/" />
 
+ <remote  name="johnnyslt"
+           fetch="git://github.com/johnnyslt/" />
+
   <remote  name="sr"
            fetch="git://github.com/SlimRoms/" />
 	
@@ -426,5 +429,15 @@
   <project path="vendor/tmobile/apps/ThemeChooser" name="themes-platform-vendor-tmobile-apps-ThemeChooser" remote="cm" revision="cm-11.0" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="android_vendor_tmobile_libs_com.tmobile.themes" remote="cm" revision="cm-11.0" />
   <project path="vendor/tmobile/providers/ThemeManager" name="android_vendor_tmobile_providers_ThemeManager" remote="cm" revision="cm-11.0" />
+
+
+
+  <project path="device/htc/msm8660-common" name="android_device_htc_msm8660-common" remote="johnnyslt" revision="cm-11.0" />
+  <project path="device/htc/shooteru" name="android_device_htc_shooteru" remote="liquid" revision="kitkat" />
+  <project path="hardware/qcom/display-legacy" name="android_hardware_qcom_display-legacy" remote="johnnyslt" revision="cm-11.0" />
+  <project path="hardware/qcom/media-legacy" name="android_hardware_qcom_media-legacy" remote="johnnyslt" revision="cm-11.0" />
+  <project path="kernel/htc/shooteru" name="android_kernel_shooter" remote="johnnyslt" revision="cm-11.0" />
+  <project path="prebuilt/linux-x86/toolchain/linaro-4.7.3_cortex-a8" name="linaro-4.7.3_cortex-a8" remote="johnnyslt" revision="master" />
+  <project path="vendor/htc" name="android_vendor_htc" remote="johnnyslt" revision="cm-11.0" />
 
 </manifest>
