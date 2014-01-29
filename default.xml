@@ -16,6 +16,9 @@
   <remote  name="ls"
            fetch="https://github.com/LiquidSmooth/" />
 
+  <remote  name="liquid"
+           fetch="https://github.com/LiquidSoup/" />
+           
  <remote  name="johnnyslt"
            fetch="git://github.com/johnnyslt/" />
 
