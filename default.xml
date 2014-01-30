@@ -248,7 +248,7 @@
   <project path="external/zlib" name="android_external_zlib" remote="cm" revision="cm-11.0" />
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" name="android_frameworks_av" remote="ls" revision="kitkat" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="ls" revision="kitkat" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="liquid" revision="kitkat" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" remote="ln" revision="linaro_android_4.4.2" />
@@ -440,7 +440,7 @@
   <project path="hardware/qcom/display-legacy" name="android_hardware_qcom_display-legacy" remote="johnnyslt" revision="cm-11.0" />
   <project path="hardware/qcom/media-legacy" name="android_hardware_qcom_media-legacy" remote="johnnyslt" revision="cm-11.0" />
   <project path="kernel/htc/shooteru" name="android_kernel_shooter" remote="johnnyslt" revision="cm-11.0" />
-  <project path="prebuilt/linux-x86/toolchain/linaro-4.7.3_cortex-a8" name="linaro-4.7.3_cortex-a8" remote="johnnyslt" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/linaro-4.7.3_cortex-a8" name="linaro-4.7.3_cortex-a8" remote="johnnyslt" revision="master" />
   <project path="vendor/htc" name="android_vendor_htc" remote="johnnyslt" revision="cm-11.0" />
 
 </manifest>
